@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="well">
+    <%= link_to "Change WebPage Style", new_webpage_style_path, remote: true, class: "btn btn-info btn-lg" %>
+  </div>
+
+  <div class="well well-lg">Style changes will be reflected here. Title changes will be reflected at page level.</div>
+
+  <table class="table table-bordered table-striped">
+    <caption>Previous Webpage Style Configurations(limited to 20 records)</caption>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Font Style</th>
+        <th>Background Color</th>
+        <th>Created at</th>
+      </tr>
+    </thead>
+    <tbody class="webpage-style-index">
+      <%= render "index" %>
+    </tbody>
+  </table>
+</div>
+
+
+<div id="webpage-style-modal" class="modal fade" role="dialog">
+</div>
+

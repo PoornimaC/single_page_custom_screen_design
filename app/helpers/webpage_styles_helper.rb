@@ -1,0 +1,2 @@
+module WebpageStylesHelper
+end

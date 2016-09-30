@@ -1,0 +1,8 @@
+<% @webpage_styles.each do |webpage_style| %>
+  <tr>
+    <td><%= webpage_style.title %></td>
+    <td><%= webpage_style.font_style %></td>
+    <td><%= webpage_style.bg_color %></td>
+    <td><%= webpage_style.created_at.strftime("%m-%d-%Y") %></td>
+  </tr>
+<% end %>
