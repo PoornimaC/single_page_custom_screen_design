@@ -1,11 +1,7 @@
 class WebpageStylesController < ApplicationController
+  before_action :get_web_page_styles, only: [:index, :create]
 
   def index
-    get_web_page_styles
-  end
-
-  def show
-    @webpage_style = WebpageStyle.find(params[:id])
   end
 
   def new
@@ -13,9 +9,7 @@ class WebpageStylesController < ApplicationController
   end
 
   def create
-    get_web_page_styles
     @webpage_style = WebpageStyle.create(webpage_style_params)
-    @current_screen_style =  @webpage_style
   end
 
   private
