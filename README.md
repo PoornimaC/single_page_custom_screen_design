@@ -17,6 +17,6 @@ MySQL
 * git clone git@github.com:PoornimaC/single_page_custom_screen_design.git
 * cd single_page_custom_screen_design
 * bundle install
-* rake db:setup
+* bundle exec rake db:setup
 
 
